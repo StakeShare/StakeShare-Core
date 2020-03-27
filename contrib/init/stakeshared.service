@@ -1,0 +1,26 @@
+[Unit]
+Description=StakeShare's distributed currency daemon
+After=network.target
+
+[Service]
+User=stakeshare
+Group=stakeshare
+
+Type=forking
+PIDFile=/var/lib/stakeshared/stakeshared.pid
+
+ExecStart=/usr/bin/stakeshared -daemon -pid=/var/lib/stakeshared/stakeshared.pid \
+          -conf=/etc/stakeshare/stakeshare.conf -datadir=/var/lib/stakeshared
+
+ExecStop=-/usr/bin/stakeshare-cli -conf=/etc/stakeshare/stakeshare.conf \
+         -datadir=/var/lib/stakeshared stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

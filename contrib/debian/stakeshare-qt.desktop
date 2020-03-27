@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=StakeShare
+Comment=StakeShare P2P Cryptocurrency
+Comment[fr]=StakeShare, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=StakeShare, eşten eşe kriptografik sanal para birimi
+Exec=stakeshare-qt %u
+Terminal=false
+Type=Application
+Icon=stakeshare128
+MimeType=x-scheme-handler/stakeshare;
+Categories=Office;Finance;
