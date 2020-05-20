@@ -8,7 +8,7 @@
   technology used to secure the network and provide the above features, each Masternode is secured
   with an evolutive collateral.
 
-More information at [StakeShare.org](http://www.stakeshare.org/) Visit our [Discord](https://discord.gg/KCcuMps)
+More information at [StakeShare.org](http://www.stakeshare.org/) Visit our [Discord](https://discord.gg/kEyD6pU)
 
 ### Coin Specificity
 <table>
