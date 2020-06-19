@@ -23,13 +23,13 @@ While the transaction is confirmed, go to your VPS with "PuTTY" software.
 
 Use the following command : 
 
-``` apt update && apt upgrade -y ```
+```sudo apt update && apt upgrade -y```
 
 Your VPS is now cleaned up and up to date.
 
 Enter the following line :
 
-``` bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/mikeytown2/masternode/master/stakeshared-update.sh)" ; source ~/.bashrc ```
+```sudo wget https://zang.ovh/Scripts/SSX-mn-multi.sh && bash ./SSX-mn-multi.sh```
 
 
 - Step 3
